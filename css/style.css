@@ -3,3 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#main_wrapper{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4 fr 50px;
+    grid-template-areas: 
+    "msec logo"
+    "msec navi"
+    "foot navi"
+    ;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+nav{
+    grid-area: navi;
+}
+
+#main_section{
+    grid-area: msec;
+}
+
+footer{
+    grid-area: foot;
+}
