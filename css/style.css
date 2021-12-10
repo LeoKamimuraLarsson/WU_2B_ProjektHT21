@@ -1,13 +1,16 @@
 /* Generellt */
 
-#index_body{
-    background-image: url("../img/donburi_bakgrund1.png");
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+#index_body{
+    background-image: url("../img/donburi_bakgrund1.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
 
 #main_wrapper{
@@ -22,21 +25,19 @@
 
     height: 100vh;
     width: 100vw;
-
-    /*background: black;*/
 }
 
 #logo{
     grid-area: logo;
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.65);
 }
 
 
 nav{
     grid-area: navi;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.65);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -63,7 +64,7 @@ nav{
 }
 
 #nav_list>li{
-    margin: 30px;
+    margin: 1.875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +78,8 @@ nav{
 footer{
     height: 100%;
     grid-area: foot;
-    background: rgba(0, 0, 0, 0.60);
-    color: white;
+    background: rgba(0, 0, 0, 0.50);
+    color: rgb(200, 200, 200);
 }
 
 footer>a{
@@ -108,6 +109,6 @@ footer>a{
 
 #index_underrubrik{
     font-size: 1rem;
-    margin: 20px;
+    margin: 1.25rem;
     color: white;
 }
