@@ -112,3 +112,66 @@ footer>a{
     margin: 1.25rem;
     color: white;
 }
+
+/* Meny sida */
+
+#menu_body{
+    background: grey;
+}
+
+#menu_page{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: 3rem minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-areas: 
+    "ti ti"
+    "b1 me"
+    "b2 me"
+    ;
+
+    margin: 1rem;
+    gap: 2rem;
+}
+
+#menu_title{
+    grid-area: ti;
+    font-size: 3rem;
+    color: white;
+}
+
+#menu{
+    grid-area: me;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+#meal_category{
+    display: flex;
+    justify-content: space-between;
+}
+
+#meal_prices{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu>article>section>ul{
+    list-style: none;
+}
+
+.menu_underline{
+    height: 2px;
+    width: 6rem;
+    background: black;
+}
+
+#bild_upp{
+    grid-area: b1;
+    background: blue;
+}
+
+#bild_ned{
+    grid-area: b2;
+    background: blue;
+}
