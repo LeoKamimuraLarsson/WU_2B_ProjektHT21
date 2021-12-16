@@ -1,4 +1,4 @@
-/* Generellt */
+/* --- Generellt --- */
 
 *{
     padding: 0;
@@ -86,7 +86,7 @@ footer>a{
     color: lightblue;
 }
 
-/* Index sida */
+/* --- Index sida --- */
 
 #index_page{
     display: flex;
@@ -113,7 +113,7 @@ footer>a{
     color: white;
 }
 
-/* Meny sida */
+/* --- Meny sida --- */
 
 #menu_body{
     background: grey;
@@ -131,6 +131,7 @@ footer>a{
 
     margin: 1rem;
     gap: 2rem;
+
 }
 
 #menu_title{
@@ -143,27 +144,25 @@ footer>a{
     grid-area: me;
     background: white;
     border-radius: 5px;
-    padding: 2rem;
-}
-
-#meal_category{
-    display: flex;
-    justify-content: space-between;
-}
-
-#meal_prices{
-    display: flex;
-    flex-direction: column-reverse;
 }
 
 #menu>article>section>ul{
     list-style: none;
 }
 
+#menu>article>section>ul>li{
+    margin: 0.4rem;
+}
+
+.menu_underrubrik{
+    font-size: 1.2rem;
+}
+
 .menu_underline{
     height: 2px;
     width: 6rem;
     background: black;
+    margin-bottom: 1.5rem;
 }
 
 #bild_upp{
@@ -174,4 +173,31 @@ footer>a{
 #bild_ned{
     grid-area: b2;
     background: blue;
+}
+
+
+/*Rätter*/
+
+#meal_category{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#meal_prices{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*Drycker*/
+
+#drink_category{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#drink_prices{
+    display: flex;
+    flex-direction: column-reverse;
 }
