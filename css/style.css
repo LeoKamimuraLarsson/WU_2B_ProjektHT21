@@ -1,9 +1,14 @@
 /* --- Generellt --- */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap'); /*Playfair Display, med seriffer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap'); /*Open Sans Condensed, san seriffer*/
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #index_body{
@@ -15,7 +20,7 @@
 
 #main_wrapper{
     display: grid;
-    grid-template-columns: minmax(500px,3fr) minmax(200px, 1fr);
+    grid-template-columns: minmax(500px,3fr) minmax(250px, 1fr);
     grid-template-rows: minmax(150px, 1fr) minmax(400px, 4fr) 20px;
     grid-template-areas: 
     "msec logo"
@@ -24,7 +29,7 @@
     ;
 
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 #logo{
@@ -52,7 +57,7 @@ nav{
 
 .nav_underline{
     height: 2px;
-    width: 11rem;
+    width: 13rem;
     background: white;
 }
 
@@ -73,6 +78,7 @@ nav{
 #nav_list>li>a{
     color: white;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 
 footer{
@@ -80,6 +86,7 @@ footer{
     grid-area: foot;
     background: rgba(0, 0, 0, 0.50);
     color: rgb(200, 200, 200);
+    font-size: 0.8rem;
 }
 
 footer>a{
@@ -99,6 +106,7 @@ footer>a{
 #title{
     font-size: 5rem;
     color: white;
+    font-family: 'Playfair Display', serif;
 }
 
 #title_underline{
@@ -116,12 +124,15 @@ footer>a{
 /* --- Meny sida --- */
 
 #menu_body{
-    background: grey;
+    background-image: url("../img/donburi_bakgrund2.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
 
 #menu_page{
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-columns: minmax(50px, 0.5fr) minmax(100px, 1fr);
     grid-template-rows: 3rem minmax(100px, 1fr) minmax(100px, 1fr);
     grid-template-areas: 
     "ti ti"
@@ -144,6 +155,27 @@ footer>a{
     grid-area: me;
     background: white;
     border-radius: 5px;
+    overflow: auto;
+}
+
+#menu_title{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#menu_title>section>h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+}
+
+
+#menu_title_underline{
+    height: 3px;
+    width: 11rem;
+    background: white;
 }
 
 #menu>article>section>ul{
@@ -151,28 +183,45 @@ footer>a{
 }
 
 #menu>article>section>ul>li{
-    margin: 0.4rem;
+    margin: 0.3rem;
 }
 
 .menu_underrubrik{
     font-size: 1.2rem;
 }
 
+.menu_underrubrik>h2{
+    font-family: 'Playfair Display', serif;
+}
+
 .menu_underline{
     height: 2px;
-    width: 6rem;
+    width: 7rem;
     background: black;
     margin-bottom: 1.5rem;
 }
 
 #bild_upp{
     grid-area: b1;
-    background: blue;
+    overflow: hidden;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#bild_upp>img{
+    color: white;    
+    max-height: 200%;
+    
 }
 
 #bild_ned{
     grid-area: b2;
-    background: blue;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    size: cover;
 }
 
 
@@ -181,12 +230,19 @@ footer>a{
 #meal_category{
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+#meal_names{
+    width: 20rem;
 }
 
 #meal_prices{
     display: flex;
     flex-direction: column-reverse;
+    width: 5rem;
 }
 
 /*Drycker*/
@@ -194,10 +250,16 @@ footer>a{
 #drink_category{
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
 }
 
 #drink_prices{
     display: flex;
     flex-direction: column-reverse;
+    width: 5rem;
 }
+
+/* --- Kontact oss sida --- */
+
