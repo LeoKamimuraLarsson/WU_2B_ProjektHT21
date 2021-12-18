@@ -48,7 +48,7 @@ nav{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 
 .main_section{
@@ -104,19 +104,19 @@ footer>a{
 }
 
 #title{
-    font-size: 5rem;
+    font-size: 5.6rem;
     color: white;
     font-family: 'Playfair Display', serif;
 }
 
 #title_underline{
     height: 3px;
-    width: 30rem;
+    width: 32rem;
     background: white;
 }
 
 #index_underrubrik{
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1.25rem;
     color: white;
     font-weight: bold;
@@ -148,7 +148,7 @@ footer>a{
 
 #menu_title{
     grid-area: ti;
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: white;
 }
 
@@ -188,7 +188,7 @@ footer>a{
 }
 
 .menu_underrubrik{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .menu_underrubrik>h2{
@@ -197,9 +197,9 @@ footer>a{
 
 .menu_underline{
     height: 2px;
-    width: 7rem;
+    width: 7.5rem;
     background: black;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
 }
 
 #bild_upp{
@@ -333,6 +333,7 @@ footer>a{
 
 #contact_info>article>h2{
     margin-top: 4rem;
+    margin-bottom: 0.3rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
 }
